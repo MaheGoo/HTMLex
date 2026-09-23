@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulaire</title>
+</head>
+<body bgcolor="#AEB8FE">
+
+	<form action="#" method="post">
+
+		<h1>Inscription d'un nouveau client</h1>
+
+		<table width=”70%”>
+			<tr> <td>Nom :</td>  <td><label for="nom"></label>
+		<input type="text" id="nom" name="nom"> </td> </tr> 
+			<tr> <td>Prénom :</td>  <td> <label for="prenom"></label>
+		<input type="text" name="prenom" id="prenom"> </td> </tr>
+			<tr> <td>Date de naissance :</td>  <td> <label for="date_naissance"></label>
+		<input type="date" name="date_naissance" id="date_naissance"> </td> </tr>
+			<tr> <td>Adresse mail</td>  <td><label for="email"></label>
+		<input type="email" name="email" id="email"> </td> </tr>
+			<tr> <td>Mot de passe</td>  <td> <label for="mdp"></label>
+		<input type="password" name="mdp" id="mdp"> </td> </tr>
+			<tr> <td>Numéro de permis</td>  <td> <label for="permis"></label>
+		<input type="text" name="permis" id="permis"> </td> </tr>
+			<tr> <td>Nombre d'années d'ancienneté :</td>  <td> <label for="anciennete"></label>
+		<input type="number" name="anciennete" id="anciennete" min="80"> </td> </tr>
+			<tr> <td>Ville :</td>  <td> <label for="ville"></label>
+		<select id="ville" name="paris">
+			<option opition value="paris">Paris</option>
+			<option opition value="versailles">Versailles</option>
+			<option opition value="Créteil">Creteil </option>
+		</select> </td> </tr>
+			<tr> <td>Adresse du client :</td>  <td> <label for="adresse"></label>
+		<textarea id="adresse" name="adresse" rows="4" cols="30"></textarea> </td> </tr>
+			<tr> <td>Stituation matrimonial :</td>  <td> 
+		<label for="marie_oui">Marié</label>
+		<input type="radio" name="mari" value="non"> <label for="marie_non">Non marié</label>
+		<input type="radio" name="mari" value="non"></td> </tr>
+		 </td> </tr>
+			<tr> <td>Préférence de voiture :</td>  <td> <label for="pref_auto">Automatique</label>
+		<input type="checkbox" id="pref_auto" name="preference_auto" value="automatique">
+		<label for="pref_manuelle">Manuelle</label>
+		<input type="checkbox" id="pref_manuelle" name="preference_manuelle" value="preference_manuelle"> </td> </tr>
+		</table>
+		<br>
+		<button type="submit">Enregistrer</button>
+		<button type="reset">Annuler</button>
+	</form>
+</body>
+</html>
