@@ -1,0 +1,114 @@
+:root {
+  --principale: #1f2d3d;
+  --secondaire: #2a9df4;
+  --accent: #14202c;
+  --clair: #f4f6f8;
+  --blanc: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--principale);
+  background-color: var(--clair);
+  margin: 0;
+}
+
+/* En-tête */
+header {
+  background-color: var(--principale);
+  color: var(--blanc);
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 4px solid var(--secondaire);
+}
+
+header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  margin: 0 0 10px;
+  color: var(--blanc);
+}
+
+header p {
+  margin: 0;
+  color: #c9d3de;
+}
+
+/* Liste des projets */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background-color: var(--blanc);
+  color: var(--principale);
+  text-decoration: none;
+  border-left: 4px solid var(--secondaire);
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projet:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.numero {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  color: var(--secondaire);
+}
+
+.nom {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.type {
+  align-self: flex-start;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  color: var(--blanc);
+  background-color: var(--secondaire);
+  border-radius: 5px;
+}
+
+.type.pdf {
+  background-color: #e67e22;
+}
+
+/* Projet sans lien */
+.projet.vide {
+  opacity: 0.5;
+  border-left-color: #999;
+  box-shadow: none;
+}
+
+.projet.vide:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.projet.vide .type {
+  background-color: #999;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7886;
+}
